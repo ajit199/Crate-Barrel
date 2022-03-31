@@ -1,6 +1,6 @@
 let favProduct=JSON.parse(localStorage.getItem("favourite"));
 let fav=document.getElementById("fav");
-let cartData=JSON.parse(localStorage.getItem("cartItem"))||[];
+let cartData=JSON.parse(localStorage.getItem("cartItems"))||[];
 
 
 
@@ -42,7 +42,8 @@ const favAppend= (data)=>{
                 cart.setAttribute("id","cartA");
                 cart.addEventListener("click",(el)=>{
                     cartData.push(el);
-                    localStorage.setItem("cartItem",JSON.stringify(cartData));
+                    localStorage.setItem("cartItems",JSON.stringify(cartData));
+                    window.location.href="#";
                     });
 
         let btmBox=document.createElement("div");

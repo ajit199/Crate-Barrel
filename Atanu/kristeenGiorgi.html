@@ -151,7 +151,7 @@
         },
     ]
 
-    let purchesdata=JSON.parse(localStorage.getItem("purchesData"));
+    let purchesdata=JSON.parse(localStorage.getItem("purchaseData"));
 
     let favProduct=JSON.parse(localStorage.getItem("favourite")) || [];
 
@@ -164,7 +164,7 @@
        img.style.cursor="pointer";
        img.src=el.image;
        img.addEventListener("click",()=>{
-        localStorage.setItem("purchesData",JSON.stringify(el));
+        localStorage.setItem("purchaseData",JSON.stringify(el));
         window.location.href="#";
        })
 
