@@ -40,7 +40,7 @@ const favAppend= (data)=>{
                 let cart=document.createElement("button");
                 cart.innerText="ADD TO CART";
                 cart.setAttribute("id","cartA");
-                cart.addEventListener("click",(el)=>{
+                cart.addEventListener("click",()=>{
                     cartData.push(el);
                     localStorage.setItem("cartItems",JSON.stringify(cartData));
                     window.location.href="#";
