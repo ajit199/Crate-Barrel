@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #sidebar {
+            margin: 30px 0 0 20px;
+        }
+
+        #sidebar>span>i {
+            cursor: pointer;
+            padding: 2px;
+        }
+
+        li {
+            color: rgb(85, 77, 77);
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        li:hover {
+            text-decoration: underline;
+        }
+
+        #categories {
+            display: none;
+            width: 290px;
+            height: 390px;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            top: 200px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            border: 1px solid black;
+        }
+
+        @keyframes showCategory {
+            0% {
+                left: -292px;
+            }
+
+            100% {
+                left: 0px;
+            }
+        }
+
+        @keyframes hideCategory {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: -300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar">
+        <span>
+            <i id="bar" class="fa fa-bars fa-2x fa-fw" aria-hidden="false"></i>
+        </span>
+    </div>
+    <div id="categories">
+        <ul type="none">
+            <li>SPRING '22 STORIES</li>
+            <li>NEW</li>
+            <li>FURNITURE</li>
+            <li>OUTDOOR</li>
+            <li>DECOR & MIRRORS</li>
+            <li>LIGHTING</li>
+            <li>PILLOWS & THROWS</li>
+            <li>RUGS</li>
+            <li>KITCHEN & DINING</li>
+            <li>BEDDING & BATH</li>
+            <li>GIFTS</li>
+            <li>SALE & OFFERS</li>
+            <li>KRAVITZ DESIGN</li>
+        </ul>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero libero voluptate soluta sed modi, temporibus
+        aperiam ex tempora, aliquam velit ad odit tempore! Quae, id dolores! Voluptatibus officia a commodi ipsum
+        laboriosam voluptas saepe, ea mollitia, eligendi eaque possimus vitae quisquam quis iste fuga aliquid similique
+        amet quam blanditiis totam sequi, impedit odit ex natus? Dolor eius voluptas impedit harum facilis ipsam. Nulla
+        officiis aspernatur voluptatem velit sequi totam asperiores iure magnam quisquam! Quibusdam modi eaque
+        consequuntur explicabo ex sed ad asperiores. Rem quasi corrupti harum, tenetur error reprehenderit rerum vel
+        laboriosam consequuntur, maxime ea magnam pariatur officiis, nemo provident ratione consectetur. Libero
+        accusamus ducimus incidunt, rem error dolorum omnis eligendi quis nesciunt quia deleniti quidem asperiores!
+        Similique alias magnam optio. Quidem velit laboriosam, rem minima, placeat accusamus, vero exercitationem
+        dignissimos perspiciatis harum similique reprehenderit alias? Labore at, nulla vitae repellendus hic dolore
+        ducimus dolorum nesciunt perferendis tenetur ad consequuntur consequatur harum, minus obcaecati libero unde
+        recusandae sequi quis possimus. Dolor repellat deleniti expedita, nihil excepturi rem enim iusto ducimus quaerat
+        deserunt atque fuga similique, nobis quam. Culpa eum praesentium rerum voluptate dicta magni aut quia sequi
+        fuga. Adipisci alias iusto perspiciatis quia debitis laborum consectetur saepe id, enim veniam voluptate
+        provident harum repellat, esse deserunt reprehenderit. Voluptatibus voluptatum eveniet, nostrum quia ipsa in
+        esse quam necessitatibus recusandae quisquam ut aliquam facilis expedita quae porro accusamus. Unde esse
+        consequuntur repudiandae fugiat ducimus voluptatem a sapiente sequi voluptatibus dolore. Id cupiditate explicabo
+        commodi totam autem maxime voluptatibus quis. Veniam deserunt aliquid et veritatis, officia eaque. Recusandae
+        assumenda, corporis amet, accusantium provident exercitationem, magni quae vel mollitia hic explicabo? Expedita
+        officia et consequatur itaque deserunt iste perspiciatis, molestias ullam distinctio nam eos in optio, minus
+        error aperiam fuga! Omnis laudantium, odit voluptate nam corrupti dolorum quaerat consequatur exercitationem
+        sit, nesciunt amet nisi quasi voluptatem deserunt beatae consequuntur eum? Dignissimos, iusto consequuntur? Quas
+        cumque necessitatibus quod quam sit nesciunt fugiat iure, voluptatum autem non eligendi ullam numquam
+        perferendis tempore, sequi laborum pariatur quasi dolor optio. Unde distinctio asperiores alias. Neque
+        aspernatur, repellendus, culpa, rerum corporis sint eum tempora cum numquam nesciunt nam eos ipsum quas
+        laudantium eveniet et facilis fuga odio. Voluptatibus eveniet perspiciatis dignissimos possimus a, quas deserunt
+        ipsam repellendus minus natus aliquam magni, quibusdam eius velit quos? Fugit rerum quidem repellat quas ea
+        neque excepturi obcaecati est enim voluptatibus perspiciatis, architecto, sapiente eveniet dignissimos unde
+        saepe velit modi! Quisquam minus dolores praesentium laudantium obcaecati maxime nemo quis facere laborum
+        aperiam quo repellendus eligendi animi odio, enim officia velit suscipit dolor consectetur ut cumque! Quos,
+        provident? Quod dolorum quos repudiandae temporibus recusandae culpa fugit delectus molestiae amet? Culpa
+        temporibus eos nostrum vel iste? Quo sint deserunt vero tempora eos nesciunt, quam, sed consectetur quasi
+        accusamus rem esse? Molestiae quaerat officiis ut tenetur ipsum quo nostrum reiciendis praesentium ad eius
+        cumque soluta corporis quisquam officia unde quia, vero quasi provident nemo est. Laborum obcaecati excepturi ab
+        eos tempore architecto perferendis quam temporibus animi sed vero accusantium sint fugit fuga facere, ad ipsa.
+        Temporibus asperiores nobis et fugiat? Ab placeat numquam laudantium molestias, ad explicabo fuga quia adipisci!
+        Commodi repellendus amet minus voluptas autem provident optio possimus id minima obcaecati? Incidunt quod ex
+        debitis, et sapiente error delectus minus magnam modi fuga voluptatem labore est voluptas doloribus! Ipsum quae
+        nostrum impedit nam eos itaque earum. Repellendus pariatur facere quasi a cupiditate rem iusto at aut,
+        praesentium voluptas. Eveniet quos doloribus accusamus cum amet, recusandae nulla libero unde velit, vitae
+        soluta dolorem inventore sapiente reprehenderit consequuntur? Nihil voluptate dignissimos quisquam assumenda
+        quos recusandae quaerat reprehenderit. Magni consequuntur veniam dolorem hic, iste laudantium, optio neque
+        impedit ipsum, excepturi mollitia. Dignissimos alias nostrum quaerat fuga a, recusandae minus repudiandae
+        voluptas aliquam officia laudantium mollitia quod, itaque quasi ea quis est totam illo iusto quam! Qui velit
+        molestiae assumenda porro nulla ipsam quidem facere voluptatibus ad alias maiores quia, voluptates soluta,
+        laborum possimus nihil odit quibusdam laudantium facilis dolorum asperiores animi aliquam expedita ex! Sint,
+        sapiente totam ipsa cupiditate itaque voluptas eos expedita quia iste laborum sed quos eius, quae velit.
+        Quisquam ullam et doloremque iure suscipit porro soluta consequuntur alias placeat est deleniti iusto nam amet
+        debitis delectus praesentium voluptate, nesciunt quia voluptas ipsam atque recusandae! Velit quidem eum
+        exercitationem saepe doloribus ipsum maxime, explicabo sint recusandae iste ratione minus magni nostrum quis
+        nulla fugiat sed repellendus, alias tempore expedita non, nesciunt totam! Similique reiciendis modi corrupti
+        alias cupiditate, earum maiores, atque asperiores at laudantium laboriosam. Ex voluptatem at cum atque fugit
+        nesciunt sint impedit rerum nostrum perspiciatis illum dignissimos tempore, velit soluta officiis iste repellat
+        dolore non ratione consequatur, aperiam ullam accusamus obcaecati. Repudiandae, est saepe voluptatum eum
+        tempora, reiciendis dolorum qui quod laborum natus necessitatibus accusantium quos alias adipisci deleniti earum
+        delectus nihil? Vitae, consectetur nostrum. Quia, maiores voluptate reiciendis temporibus totam harum aut
+        laborum tempore quasi eaque necessitatibus aperiam neque! Vitae libero unde quidem explicabo vero natus
+        necessitatibus minus recusandae architecto adipisci rem maxime laborum, cupiditate esse vel suscipit nesciunt ad
+        blanditiis sit, sapiente provident expedita possimus. Maiores nobis necessitatibus cumque dicta, voluptatum eum
+        tempore praesentium ea hic. Odit enim laboriosam modi! Dolorum doloribus inventore, porro nulla, enim nam quod
+        ratione delectus iste aspernatur dolores ad unde nobis a id maxime, iusto quasi obcaecati laborum esse? Nostrum
+        nulla optio sint, impedit odio illo magnam cupiditate nemo tenetur accusantium excepturi, eos eveniet itaque
+        praesentium doloribus dicta accusamus molestiae suscipit labore maiores asperiores saepe? Mollitia, libero
+        aliquid id consequuntur eaque corporis quos illum facere debitis reiciendis at cum? Recusandae, assumenda!
+        Incidunt aliquam assumenda perspiciatis tenetur, ipsam cum exercitationem eaque ratione iste at quo dolore,
+        velit laboriosam quis asperiores neque nihil natus voluptatum qui vero nostrum nulla ex. Recusandae, ut in quos
+        maxime laboriosam rem itaque officia dolorem, iure distinctio voluptas obcaecati iusto magni impedit facilis
+        architecto sint? Libero mollitia sit dolorum tempore cupiditate labore aut autem eaque dolore voluptatem, ipsam
+        aperiam asperiores, perferendis expedita repudiandae nemo impedit explicabo, iusto est quis. Voluptatibus
+        provident accusamus in, vitae officia ipsam nulla aliquam exercitationem illo repellat ut rem tempore?</p>
+</body>
+
+</html>
+
+<script>
+    let tag = document.getElementById("bar");
+    let icon = document.querySelector("#sidebar>span>i");
+    let categories = document.getElementById("categories");
+    tag.addEventListener("click", (event) => {
+        let value = tag.getAttribute("aria-hidden");
+        if (value == "false") {
+            icon.style.border = "1px dotted black";
+            tag.setAttribute("class", "fa-solid fa-xmark fa-2x fa-fw");
+            tag.setAttribute("aria-hidden", "true");
+            categories.style.animation = "showCategory 0.8s";
+            setTimeout(() => {
+                categories.style.display = "block";
+            }, 400)
+        } else if (value == "true") {
+            icon.style.border = "1px dotted black";
+            tag.setAttribute("class", "fa-solid fa-bars fa-2x fa-fw");
+            tag.setAttribute("aria-hidden", "false");
+            categories.style.animation = "hideCategory 0.8s";
+            setTimeout(() => {
+                categories.style.display = "none";
+            }, 800)
+        }
+    })
+
+    document.addEventListener("click", (event) => {
+        if (event.target.nodeName != "I") {
+            icon.style.border = "none";
+        }
+    });
+</script>
