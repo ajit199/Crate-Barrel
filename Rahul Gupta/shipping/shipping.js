@@ -1,27 +1,36 @@
+const storeDetails = () => {
 
- var detailsShippingKa = JSON.parse(localStorage.getItem("shipping"));
-
- const storeDetails = () => {
-
+   var fname = document.getElementById("fname").value;
+   var lname = document.getElementById("lname").value;
+   var address = document.getElementById("address").value;
+   var zipCode = document.getElementById("zip").value;
+   var city = document.getElementById("city").value;
+   var state = document.getElementById("state").value;
+   var phone = document.getElementById("number").value;
+ 
   var Dobj = {
-     fname : document.getElementById("fname").value,
-     lname : document.getElementById("lname").value,
-     address : document.getElementById("address").value,
-     zipCode : document.getElementById("zip").value,
-     city : document.getElementById("city").value,
-     state : document.getElementById("state").value,
-     phone : document.getElementById("number").value,
+     fname : fname,
+     lname : lname,
+     address : address,
+     zipCode : zipCode,
+     city : city,
+     state : state,
+     phone : phone,
    };
-
- var shippingDetails = []
-
+ 
+ // var shippingDetails = [];
+ 
+ var shippingDetails = JSON.parse(localStorage.getItem("shipping")) || [];
+ 
  shippingDetails.push(Dobj)
-
-
-
- localStorage.setItem("shipping" , JSON.stringify("shippingDetails"))
-
-    console.log(shippingDetails);
+ 
+ // console.log("Details :" + shippingDetails);
+ 
+ localStorage.setItem("shipping" , JSON.stringify(shippingDetails))
+ 
+ 
  }
-
-  storeDetails();
+ 
+ storeDetails();
+ 
+ console.log(shippingDetails)

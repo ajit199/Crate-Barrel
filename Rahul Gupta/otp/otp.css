@@ -1,0 +1,51 @@
+body,html{
+  /* background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-financial-finance-investment-golden-business-webpage-poster-background-image_184055.jpg");
+} */
+
+background-image: url("https://c.tenor.com/vWK5xwxubv0AAAAM/home-for-sale-in-florida-home.gif");
+}
+
+#dibba{
+  height: 320px;
+  background-color: tomato;
+  padding: 20px;
+  width: 350px;
+  /* border: 2px solid red; */
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  margin: auto;
+  margin-top: 150px;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  padding-left: 5px;
+  margin-top: 50px;
+}
+
+#otp{
+  height: 25px;
+  width: 340px;
+  border-radius: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#btn{
+  margin-top: 30px;
+  font-weight: 550;
+  color: white;
+  background-color: rgb(20, 20, 20);
+  height: 30px;
+  width: 150px;
+  margin-left: 30%;
+  border: 0px;
+  border-radius: 10px;
+}
+
