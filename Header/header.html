@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+    <div id="header">
+    </div>
+</body>
+
+</html>
+<script type="module">
+    import navbar from "./header.js";
+    var header = document.getElementById("header");
+    header.innerHTML = navbar();
+    let tag = document.getElementById("bar");
+    let icon = document.querySelector("#sidebar>span>i");
+    let categories = document.getElementById("categories");
+    tag.addEventListener("click", (event) => {
+        let value = tag.getAttribute("aria-hidden");
+        if (value == "false") {
+            icon.style.border = "1px dotted black";
+            tag.setAttribute("class", "fa-solid fa-xmark fa-2x fa-fw");
+            tag.setAttribute("aria-hidden", "true");
+            categories.style.animation = "showCategory 0.8s";
+            setTimeout(() => {
+                categories.style.display = "block";
+            }, 400)
+        } else if (value == "true") {
+            icon.style.border = "1px dotted black";
+            tag.setAttribute("class", "fa-solid fa-bars fa-2x fa-fw");
+            tag.setAttribute("aria-hidden", "false");
+            categories.style.animation = "hideCategory 0.8s";
+            setTimeout(() => {
+                categories.style.display = "none";
+            }, 800)
+        }
+    })
+
+    document.addEventListener("click", (event) => {
+        if (event.target.nodeName != "I") {
+            icon.style.border = "none";
+        }
+    });
+
+    let box = document.getElementById("input-box");
+    let btn = document.getElementById("btn");
+    let line = document.getElementById("line");
+    box.addEventListener("focus", () => {
+        btn.style.animation = "searchBtn 0.5s forwards";
+        box.placeholder = "Search";
+        line.style.width = "350px";
+        line.style.borderTop = "0.18em solid";
+    })
+
+    box.addEventListener("focusout", () => {
+        btn.style.animation = "search 0.5s forwards";
+        box.placeholder = "";
+        line.style.width = "200px";
+        line.style.borderTop = "1px solid";
+    })
+</script>
