@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kitchen</title>
+    <script src="https://kit.fontawesome.com/497d1fea8c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/products.css">
+</head>
+<body>
+    
+    <div style="margin-left: 300px;margin-top: 5px;"><h1>KITCHEN Items</h1></div>
+    <!-- mid filters and arrangeing buttons -->
+    <div id="filters">
+        <div><h4>FREE CURBSIDE PICKUP</h4></div>
+        <div><h4>FILTER</h4></div>
+        <div id="filter-cup"> 
+          <h4>  <i  id="filter-cup" class="fa-solid fa-filter" style="margin-left:3px;"></i></h4>
+        </div>
+        <div id="drop-down-main"><h3 id="showkara" style="margin:center;">MOST RELEVENT</h3>
+            <div id="drop-down-container">
+                <div>
+                    <button ><i id="closeme" class="fa-solid fa-square-xmark"></i></button>
+                </div>
+               
+                <input type="radio" name="arange" value="lth">Price, low to high <br>
+                <input type="radio" name="arange" value="htl">Price, high to low <br>
+                <input type="radio" name="arange" value="">New<br>
+            </div>
+           
+            
+        </div>
+
+    </div>
+
+    <!-- sode pop up filter dive and arrangeing in increasing or decreasing order -->
+    <div id="filter-content">
+        <div id="filter-panel-stick">
+                <button type="button" class="close-filter-btn">
+                    <i ><img id="cross" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-512.png" alt=""></i>
+                </button>
+        </div>
+        <div id="filter-title"><h3  style="margin-left: 150px;">FILTER & SORT</h3></div><hr>
+
+        <div id="flter-sort-by-section ps">
+           <div id="fake" class="popup">
+               <div>
+                   <div  ><h3 class="most">MOST RELEVENT</h3>
+                     <div class="drop-down-main2" style="display: none;">
+                             <!-- <h3 id="showkara2" style="margin: auto;"></h3> -->
+                         <div id="drop-down-container2">
+                             <div>
+                               <button ><i id="closeme" class="fa-solid fa-square-xmark"></i></button>
+                             </div>
+                       
+                              <input type="radio" name="arange" value="lth">Price, low to high <br>
+                              <input type="radio" name="arange" value="htl">Price, high to low <br>
+                               <input type="radio" name="arange" value="">New<br>
+                          </div>
+                   
+                    
+                    </div>
+               </div>
+            </div>
+                <div><hr>
+                    <h3 class="most" style="cursor: pointer;">+</h3>
+                    <div class="drop-down-main2" style="display: none;">
+                        <!-- <h3 id="showkara2" style="margin: auto;"></h3> -->
+                        <div id="drop-down-container2">
+                            <div>
+                            <button ><i id="closeme" class="fa-solid fa-square-xmark"></i></button>
+                            </div>
+                  
+                           <input type="radio" name="arange" value="lth">Price, low to high <br>
+                           <input type="radio" name="arange" value="htl">Price, high to low <br>
+                          <input type="radio" name="arange" value="">New<br>
+                     </div>
+              
+               
+                    </div>
+                </div>
+
+           </div><hr>
+           <div id="fake">
+                <div><h3 class="most">SIZE</h3>
+                    <div id="size">
+                        <input type="radio" name="arange" value="">small<br>
+                        <input type="radio" name="arange" value="">medeum<br>
+                       <input type="radio" name="arange" value="">larg<br>
+                    </div>
+                </div>
+                <div><h2 class="most">+</h2>
+                    <div id="size">
+                        <input type="radio" name="arange" value="">small<br>
+                        <input type="radio" name="arange" value="">medeum<br>
+                       <input type="radio" name="arange" value="">larg<br>
+                    </div>
+                </div>
+           </div><hr>
+           <div id="fake">
+            <div><h3 id="band">MATERIAL</h3></div>
+            <div><h2>+</h2></div>
+           </div><hr>
+           <div id="fake">
+            <div><h3>COLOR</h3></div>
+            <div><h2>+</h2></div>
+           </div><hr>
+           <div id="fake">
+            <div><h3 class="most">PRICE</h3>
+                <div id="price">
+                      <input type="radio" name="between" value="low">less tha <$ 100<br>
+                        <input type="radio" name="between" value="mid">between $ 100 & $ 200<br>
+                       <input type="radio" name="between" value="high">more than > $ 200<br>
+                </div>       
+            </div>
+            <div><h2>+</h2></div>
+           </div><hr>
+           <div id="fake">
+            <div><h3>TYPE</h3></div>
+            <div><h2>+</h2></div>
+           </div>
+        </div>
+        <div id="filter-panel-footer"></div>
+    </div>
+
+    <!-- arangement of product -->
+    <div id="container">
+        
+    </div>
+</body>
+</html>
+
+
+
+<script type="module">
+    import {kitchen} from "./scripts/data.js"
+    import {append,filterData} from "./scripts/product.js"
+    // console.log(filterData())
+
+    let container=document.getElementById("container");
+
+    let myorder=document.querySelectorAll("input[name='arange']");
+    
+
+     myorder.forEach((myorder)=>{    
+
+         myorder.addEventListener("change",()=>{
+
+          let myorder=document.querySelector("input[name='arange']:checked") 
+          
+        console.log(myorder.value)
+        if(myorder.value=="lth"){
+        kitchen.sort((a,b)=>{return a.price-b.price})
+        
+        append(kitchen,container)
+        // console.log(kitchen)
+        }
+        if(myorder.value=="htl"){
+            kitchen.sort((a,b)=>{return b.price-a.price})
+            append(kitchen,container)
+            // console.log(kitchen)
+        }
+    })
+
+})
+
+let betweenthings=document.querySelectorAll("input[name='between']")
+console.log(betweenthings)
+betweenthings.forEach((el)=>{
+el.addEventListener("click",()=>{
+   
+    let betweentwo=document.querySelector("input[name='between']:checked")
+    console.log(betweentwo.value)
+    var arr=[];
+    for(let i=0;i<kitchen.length;i++){
+        // console.log(kitchen[i].price)
+        if(betweentwo.value==="low"&&kitchen[i].price<100){
+            arr.push(kitchen[i])
+            console.log(kitchen[i].price)
+        }
+       else if(betweentwo.value==="mid"){
+           console.log(kitchen[i].price<200&&kitchen[i].price>100)
+
+            if(kitchen[i].price<200&&kitchen[i].price>100){
+                arr.push(kitchen[i])
+                console.log(kitchen[i].price)
+            }
+          
+        }
+        else if(betweentwo.value=="high"&&kitchen[i].price>200) {
+            arr.push(kitchen[i])
+            console.log(kitchen[i].price)
+        }
+    }
+    // console.log(arr)
+    append(arr,container)
+
+
+})
+
+   
+})
+
+// arranging price in order of increasing or decreasing
+let dropdown=document.getElementById("showkara");
+
+dropdown.addEventListener("click",()=>{
+    let showdrop=document.getElementById("drop-down-container");
+    if(showdrop.style.display==="none"){
+        showdrop.style.display="block"
+    }else {showdrop.style.display="none"}
+    
+})
+
+
+let cup=document.getElementById("filter-cup");
+
+cup.addEventListener("click",()=>{
+    let sidebar=document.getElementById("filter-content");
+    if(sidebar.style.display=="none"){sidebar.style.display="block"}
+    else{sidebar.style.display="none"}
+    
+})
+
+let closebtn=document.querySelector(".close-filter-btn")
+
+closebtn.addEventListener("click",()=>{
+    let sidebar=document.getElementById("filter-content");
+    sidebar.style.display="none"
+})
+
+
+let open=document.querySelector(".popup");
+
+open.addEventListener("click",()=>{
+    let showdrop=document.getElementById("drop-down-container2");
+    if(showdrop.style.display=="none"){
+        showdrop.style.display="block"
+    }
+    else{
+        showdrop.style.display="none"
+    }
+   
+    
+})
+let hideme2=document.querySelector("#band")
+
+hideme2.addEventListener("click",()=>{
+    let hide2=document.getElementById("drop-down-container2");
+    hide2.style.display="none";
+    
+})
+
+
+
+
+
+
+// inside side bar filter things
+var dropdown1 = document.getElementsByClassName("most");
+for (var i = 0; i < dropdown1.length; i++) {
+  dropdown1[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+    append(kitchen,container)
+
+</script>
