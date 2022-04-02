@@ -9,6 +9,9 @@ paymentBtn.addEventListener("click" , function(){
   {
     alert("Sorry! card number must be 16 digit only");
   }
+  else{
+    location.href="../otp/otp.html"
+  }
 
 
   var cardDetails = document.getElementById("saveCard");
