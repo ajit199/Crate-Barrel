@@ -180,6 +180,8 @@
         icon.style.cursor="pointer";
         icon.addEventListener("click",()=>{
             favProduct.push(el);
+            icon.setAttribute("class","fa fa-heart");
+            icon.style.color="red";
             localStorage.setItem("favourite",JSON.stringify(favProduct))
         })
 
