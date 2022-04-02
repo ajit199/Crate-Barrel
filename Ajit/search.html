@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #input-div {
+            width: 400px;
+            margin: 50px;
+        }
+
+        #input-box {
+            border: none;
+            font-size: 18px;
+            font-weight: lighter;
+            width: 150px;
+            margin-left: -10px;
+        }
+
+        #input-box:focus {
+            outline: none;
+        }
+
+        #line {
+            display: block;
+            width: 200px;
+            border-top: 1px solid black;
+        }
+
+        #btn {
+            background: none;
+            border: none;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        @keyframes searchBtn {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 360px;
+            }
+        }
+
+        @keyframes search {
+            from {
+                left: 360px;
+            }
+
+            to {
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="input-div">
+        <div>
+            <button id="btn"><i class="fa-solid fa-magnifying-glass fa-2x"></i></button>
+            <input type="text" id="input-box">
+        </div>
+        <span id="line"></span>
+    </div>
+</body>
+
+</html>
+
+<script>
+    let box = document.getElementById("input-box");
+    let btn = document.getElementById("btn");
+    let line = document.getElementById("line");
+    box.addEventListener("focus", () => {
+        btn.style.animation = "searchBtn 0.5s forwards";
+        box.placeholder = "Search";
+        line.style.width = "400px";
+        line.style.borderTop = "0.18em solid";
+    })
+
+    box.addEventListener("focusout", () => {
+        btn.style.animation = "search 0.5s forwards";
+        box.placeholder = "";
+        line.style.width = "200px";
+        line.style.borderTop = "1px solid";
+    })
+</script>

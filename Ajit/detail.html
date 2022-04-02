@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    * {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    label,
+    p,
+    span {
+      color: rgb(44, 37, 37);
+    }
+
+    #main_container {
+      display: flex;
+      width: 85%;
+      margin: auto;
+    }
+
+    #main_img {
+      width: 680px;
+    }
+
+    #main_img>img {
+      width: 100%;
+    }
+
+    #detailDiv {
+      margin-left: 30px;
+    }
+
+    /* span works starts here */
+    #span_div {
+      display: flex;
+      gap: 10px;
+    }
+
+    #span_div>span {
+      font-size: 12px;
+    }
+
+    #span_div>span:first-child {
+      text-decoration: underline;
+      cursor: pointer;
+      padding-right: 8px;
+      border-right: 1px solid gray;
+    }
+
+    #span_div>span:nth-child(2) {
+      padding-right: 8px;
+      border-right: 1px solid gray;
+    }
+
+    /* span works ends here */
+    #product_title {
+      font-weight: lighter;
+      margin-top: 0;
+    }
+
+    #product_price::before {
+      content: "$";
+
+    }
+
+    /* shipping code starts here */
+
+    #ship_methods {
+      margin: 15px 0;
+    }
+
+    #ship_methods>label,
+    #ship_methods>input {
+      width: 20px;
+      height: 20px;
+      margin: 10px 5px;
+    }
+
+    /* shipping code ends here */
+
+    #cart_btn {
+      width: 90%;
+      padding: 15px 0;
+      margin-top: 20px;
+      font-size: 17px;
+      color: white;
+      background: rgb(37, 37, 37);
+      border: 1px solid;
+      cursor: pointer;
+    }
+
+    #cart_btn:hover {
+      background: black;
+    }
+
+    #shoprunner {
+      width: 100px;
+      margin-right: 3px;
+      height: 16px
+    }
+
+
+    /* review code starts here */
+    #review_div {
+      margin-top: 50px;
+    }
+
+    #review_div>div {
+      display: flex;
+      justify-content: space-between;
+      color: rgb(44, 37, 37);
+      font-size: 14px;
+    }
+
+    /* review code starts here */
+
+    /* quantity code starts here */
+
+    #quantity>input {
+      padding: 4px 10px;
+      width: 20px;
+      height: 26px;
+      font-size: 18px;
+    }
+
+    #quantity>button {
+      border: 0;
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    #quantity>button:first-child {
+      margin-right: -6px;
+    }
+
+    #quantity>button:last-child {
+      margin-left: -5px;
+    }
+
+    /* quantity code ends here */
+  </style>
+</head>
+
+<body>
+  <div id="main_container">
+    <div id="main_img">
+      <img id="product_image"
+        src="https://cb2.scene7.com/is/image/CB2/InlayGreenMrblChckrsHolSHF21/$web_pdp_main_carousel_md$/210823124903/inlay-green-marble-checkers-set.jpg"
+        alt="image" />
+    </div>
+    <div id="detailDiv">
+      <h3 id="product_title">
+        INLAY GREEN MARBLE CHECKERS SET
+      </h3>
+      <p id="product_price">$149</p>
+      <div id="span_div">
+        <span>1 Review</span>
+        <span>SKU: 45489</span>
+        <span>CB2 Exclusive</span>
+      </div>
+      <div id="ship_methods">
+        <input type="radio" name="method" id="" />
+        <label for="">Ship <br /><span style="margin-left: 40px; font-size: 12px">In stock and ready to
+            ship.</span></label><br />
+        <input type="radio" name="method" id="" />
+        <label for="">
+          FREE CURBSIDE PICKUP AT STORE<br /><span style="
+                margin-left: 40px;
+                font-size: 12px;
+                text-decoration: underline;
+                cursor: pointer;
+              ">SELECT STORE</span></label>
+      </div>
+      <p style="font-size: 12px">
+        <span style="color: rgb(76, 77, 77)">Now through March 31: Up to 24 Month Special Financing.***</span><br />
+        Or earn <span style="color: rgb(76, 77, 77)">$15</span>
+        in reward dollars.*
+      </p>
+      <div id="quantity">
+        <button id="minus">-</button>
+        <input type="text" id="cart_quantity" />
+        <button id="plus">+</button>
+      </div>
+      <div>
+        <button id="cart_btn">ADD TO CART</button>
+      </div>
+      <div style="margin-top: 10px">
+        <img src="https://content.shoprunner.com/assets/pik_images/v4/_sr_logo.svg" alt="logo" id="shoprunner" />
+        <span style="font-size: 12px">Get free 2-day shipping & returns on this <br />
+          item.
+        </span>
+      </div>
+      <div id="review_div">
+        <hr />
+        <div>
+          <p>DETAILS</p>
+          <p>+</p>
+        </div>
+        <hr />
+        <div>
+          <p>DIMENSIONS</p>
+          <p>+</p>
+        </div>
+        <hr />
+        <div>
+          <p>REVIEWS</p>
+          <p>+</p>
+        </div>
+        <hr />
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<script>
+  let cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
+  let product = JSON.parse(localStorage.getItem("purchaseData"));
+  let product_image = document.getElementById("product_image");
+  let product_title = document.getElementById("product_title");
+  let product_price = document.getElementById("product_price");
+  const displayData = (data) => {
+    data.forEach(({ title, image, price }) => {
+      product_image.src = image;
+      product_title.innerText = title;
+      product_price.innerText = `${price}`;
+    });
+  };
+  displayData(product);
+  let decrease = document.getElementById("minus");
+  let increase = document.getElementById("plus");
+  let count = 1;
+  document.getElementById("cart_quantity").value = count;
+  decrease.addEventListener("click", () => {
+    count--;
+    document.getElementById("cart_quantity").value = count;
+  });
+  increase.addEventListener("click", () => {
+    count++;
+    document.getElementById("cart_quantity").value = count;
+  })
+
+  document.getElementById("cart_btn").addEventListener("click", () => {
+    let product = {
+      title: product_title.innerText,
+      image: product_image.src,
+      price: +document.getElementById("product_price").innerText,
+      quantity: +document.getElementById("cart_quantity").value
+    }
+    cartArr.push(product);
+    localStorage.setItem("cartItems", JSON.stringify(cartArr));
+  })
+</script>
