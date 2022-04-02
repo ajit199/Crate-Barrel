@@ -109,15 +109,14 @@ const navbar = () => {
       <ul type="none">
         <li onclick="">SPRING '22 STORIES</li>
         <li onclick="">NEW</li>
-        <li onclick="">FURNITURE</li>
-        <li onclick="">OUTDOOR</li>
-        <li onclick="">DECOR & MIRRORS</li>
-        <li onclick="">LIGHTING</li>
-        <li onclick="">PILLOWS & THROWS</li>
-        <li onclick="">RUGS</li>
-        <li onclick="">KITCHEN & DINING</li>
-        <li onclick="">BEDDING & BATH</li>
-        <li onclick="">GIFTS</li>
+        <li onclick=""><a href="../Rajayadav/furniture.html">FURNITURE</a></li>
+        <li onclick=""> <a href="#">DECOR & MIRRORS</a></li>
+        <li onclick=""> <a href="../Rajayadav/lighting.html">LIGHTING</a></li>
+        <li onclick=""> <a href="#">PILLOWS & THROWS</a></li>
+        <li onclick=""> <a href="../Rajayadav/furniture.html">RUGS</a></li>
+        <li onclick=""> <a href="../Rajayadav/kitchen.html">KITCHEN & DINING</a></li>
+        <li onclick=""> <a href="../Rajayadav/bathProduct.html">BEDDING & BATH</a></li>
+        <li onclick=""> <a href="#">GIFTS</a></li>
         <li onclick="" style="color:red;">SALE & OFFERS</li>
         <li onclick="">KRAVITZ DESIGN</li>
         <hr style="width :8%; margin: 20px 0;border: 1px solid;">

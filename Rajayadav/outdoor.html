@@ -7,10 +7,18 @@
     <title>outdoor</title>
     <script src="https://kit.fontawesome.com/497d1fea8c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/products.css">
+
+    <link rel="stylesheet" href="../Footer/footer.css">
+    <link rel="stylesheet" href="../Header/header.css"> 
+    <style>
+      #categories{
+    display: block;
+}
+    </style>
 </head>
 <body>
-    
-    <div style="margin-left: 300px;margin-top: 5px;"><h1>OUTDOOR ITEMS</h1></div>
+    <div id="header"></div>
+    <div style="margin-left: 300px;margin-top: 50px;"><h1>OUTDOOR ITEMS</h1></div>
     <!-- mid filters and arrangeing buttons -->
     <div id="filters">
         <div><h4>FREE CURBSIDE PICKUP</h4></div>
@@ -128,12 +136,31 @@
     <div id="container">
         
     </div>
+    <div id="footerA">
+        <!-- footer upper section -->
+     
+       </div>
 </body>
 </html>
 
 
 
 <script type="module">
+     // heeader and footer
+import { navbar, sideOff } from "../Header/header.js";
+  let navHade=document.getElementById("header");
+  navHade.innerHTML=navbar();
+  
+
+  sideOff();
+
+    import {footer,scrollTop} from "../Footer/footer.js";
+        let footER= document.getElementById("footerA");
+        footER.innerHTML=footer();
+        let scrolToTop=document.getElementById("btnScrollToTop");
+        scrollTop(scrolToTop);
+
+        // header footer end
     import {outdoor} from "./scripts/data.js"
     import {append,filterData} from "./scripts/product.js"
     // console.log(filterData())
