@@ -33,4 +33,4 @@ const storeDetails = () => {
  
  storeDetails();
  
- console.log(shippingDetails)
+//  console.log(shippingDetails)

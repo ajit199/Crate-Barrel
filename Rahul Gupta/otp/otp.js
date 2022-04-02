@@ -34,7 +34,7 @@
     {
       alert("Congrats! otp validation Successful");
   
-      location.href = "success.html"
+      // location.href = "../success/success.html"
     }
     else if(received != ""){
       alert("Oops! invalid otp")
