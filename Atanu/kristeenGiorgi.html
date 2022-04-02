@@ -7,6 +7,7 @@
     <title>Kristeen Giorgi</title>
     <script src="https://kit.fontawesome.com/0a6d51cc4c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../Footer/footer.css">
+    <link rel="stylesheet" href="../Header/header.css">
     <style>
         #conCrisA{
             display: grid;
@@ -17,7 +18,7 @@
             display: grid;
             grid-template-columns: 50% 48%;
             grid-template-rows: 600px;
-            gap: 2%;
+            gap: 1%;
         }
         #productA{
             display: grid;;
@@ -31,15 +32,20 @@
             display: flex;
             justify-content: space-between;
         }
+
+        #categories{
+            display: block;
+        }
         
     </style>
 </head>
 <body>
+    <div id="header"></div>
     <div id="conCrisA">
         <div id="leftA"></div>
         <div id="rightA">
             <div>
-                <a href="../index.html" class="underline_hover">SPECIAL FEATURES</a>
+                <a href="../index.html" class="underline_hover" style="margin-top: 40px;">SPECIAL FEATURES</a>
                 <h1 style="font-size: 30px; font-family:'Courier New',">KRISTEEN GIORGI</h1>
             </div>
            <div id="cristeenA">
@@ -66,6 +72,12 @@
 </html>
 
 <Script type="module">
+
+import { navbar, sideOff } from "../Header/header.js";
+  let navHade=document.getElementById("header");
+  navHade.innerHTML=navbar();
+  sideOff();
+
     import {footer,scrollTop} from "../Footer/footer.js";
         let footER= document.getElementById("footerA");
         footER.innerHTML=footer();
@@ -164,8 +176,10 @@
        img.style.cursor="pointer";
        img.src=el.image;
        img.addEventListener("click",()=>{
-        localStorage.setItem("purchaseData",JSON.stringify(el));
-        window.location.href="#";
+           let xyz=[];
+           xyz.push(el);
+        localStorage.setItem("purchaseData",JSON.stringify(xyz));
+        window.location.href="../Ajit/detail.html";
        })
 
        let tp=document.createElement("div");

@@ -6,13 +6,14 @@ const footer = ()=>{
                 <div><p style="font-size: 15px;">Feedback</p></div>
                 <div><p style="margin-left: 5px;">CHAT</p></div>
             </div>
+
         <div style="padding-top: 50px; background-color:white;margin:-10px">
              <div style="display: flex; flex-direction: row; margin: 0px; padding-bottom: 30px;">
                 <span style="padding-left: 100px;font-family:'Courier New', Courier, monospace;font-size: 18px;font-weight: bold;">ON OUR RADAR</span>
                 <hr style="border-inline: 1px; width: 1000px;">
              </div>
              <div style="display: grid;grid-template-columns: repeat(4,22%);grid-template-rows:450px;gap:2%; justify-content: center;">
-                <a href="">
+                <a href="../Rajayadav/lighting.html">
                     <img src="https://cb2.scene7.com/is/image/CB2/121421_marquee_lighting_2?wid=680&qlt=75&resMode=sharp2" alt="" style="width: 100%; height:350px;">
                     <p>BRUNA COLLECTION OF LIGHT</p>
                 </a>
@@ -20,11 +21,11 @@ const footer = ()=>{
                     <img src="https://cb2.scene7.com/is/image/CB2/021822_home_bt_3?wid=740&qlt=50" alt="" style="width: 100%; height: 350px;">
                     <p>ENTER THE LUSH, DREAMLIKE WORLD OF FINE ARTIST KRISTEN GIORGI</p>
                 </a>
-                <a href="">
+                <a href="../Rajayadav/furniture.html">
                     <img src="https://cb2.scene7.com/is/image/CB2/123021_super_furniture_livingRoom?wid=1000&qlt=50" alt="" style="width: 100%; height: 350px;">
                     <p>LIVINGROOM AND OUTDOOR FURNITURE</p>
                 </a>
-                <a href="">
+                <a href="../Rajayadav/kitchen.html">
                     <img src="https://cb2.scene7.com/is/image/CB2/123021_super_dining_drinkwareBar?wid=1000&qlt=50" alt="" style="width: 100%; height: 350px;">
                     <p>KITCHEN STORAGE AND TOOLS</p>
                 </a>

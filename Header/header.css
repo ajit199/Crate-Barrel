@@ -83,6 +83,7 @@ body{
   #bicchu{
    display: flex;
    justify-content: flex-end;
+   margin-bottom: 0px;
   }
   
   #bicchu > a{ 
@@ -221,7 +222,8 @@ body{
   #categories {
     display: none;
     width: 290px;
-    background-color: white;
+    background-color: whitesmoke;
+    margin-top: 35px;
     position: absolute;
   }
   
@@ -294,4 +296,16 @@ body{
     to {
       left: 0;
     }
+  }
+
+  #offerA{
+    left:25%;
+    top: 25px;
+    bottom:30px;
+    width:50%;
+    background-color:whitesmoke;
+    position:fixed;
+    display: none;
+    font-family: sans-serif;
+    padding-bottom: 20px;
   }
