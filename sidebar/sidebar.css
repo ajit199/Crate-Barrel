@@ -1,0 +1,25 @@
+#sidebar{
+  height:870px;
+  width: 20%;
+  margin-top: 150px;
+  border: 2px solid black;
+  /* position: fixed;
+  overflow: scroll; */
+}
+
+#sidebar > div > a{
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Lineto Brown Sub", "Lineto Brown Light Sub", Verdana, sans-serif;
+  margin:45px;
+  color: black;
+ }
+
+ #sidebar > div > a:hover{
+   text-decoration: underline;
+   color:#99677b;
+ }
+ 
+ #sidebar > div{
+  margin-top: 30px;
+}
