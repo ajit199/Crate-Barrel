@@ -14,6 +14,7 @@ function method(arr) {
   let count = arr.map((item) => {
     return item.quantity;
   });
+  let priceObj = {};
   let minus = document.querySelectorAll("#minus");
   let plus = document.querySelectorAll("#plus");
   let cart_quantity = document.querySelectorAll("#cart_quantity");
@@ -64,6 +65,7 @@ function method(arr) {
   document.querySelector("#promo-code>button").addEventListener("click", () => {
     let discount = (10 / 100) * +dis;
     discount = Math.floor(discount);
+    priceObj.discount = discount;
     let ans = +dis - discount;
     document.getElementById("finalTotal").innerText = ans;
     finalTotal -= discount;
@@ -94,11 +96,11 @@ function method(arr) {
       }
     });
   }
-  if (arr.length != 0) {
-    document.getElementById("shipping").innerText = 100;
-    document.getElementById("tax").innerText = 78;
-  } else {
-    document.getElementById("shipping").innerText = 0;
-    document.getElementById("tax").innerText = 0;
-  }
+  document.getElementById("checkout_btn").addEventListener("click", () => {
+    priceObj["total"] = cartTotalPrice;
+    priceObj["finalTotal"] = finalTotal;
+    // console.log(priceObj);
+    localStorage.setItem("totalPrice", JSON.stringify(priceObj));
+    window.location.href = "../Rahul Gupta/shipping/shipping.html";
+  });
 }

@@ -3,7 +3,7 @@ const footer = ()=>{
                <div id="btnScrollToTop"><i class="fa fa-chevron-up" aria-hidden="true"style="margin-left: 10px; font-size: 20px;"></i>
                  <p style="margin-top: -15px; font-family:sans-serif; font-size: 18px;margin-left: 13px;">Top</p>
                 </div>
-                <div><p style="font-size: 15px;">Feedback</p></div>
+                <div><p style="font-size: 11px;">Feedback</p></div>
                 <div><p style="margin-left: 5px;">CHAT</p></div>
             </div>
 

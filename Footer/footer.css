@@ -58,6 +58,10 @@
             gap: 0px;
             width: 50px;
             position: fixed;
+            /* color: black; */
+        }
+        #extraBottom p{
+            color: black;
         }
         #extraBottom>div{
             border: 1px solid black;
