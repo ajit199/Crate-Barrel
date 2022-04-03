@@ -5,21 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../Footer/footer.css">
-    <link rel="stylesheet" href="../../Header/header.css">
+    <link rel="stylesheet" href="../Footer/footer.css">
+    <link rel="stylesheet" href="../Header/header.css">
     <script src="https://kit.fontawesome.com/0a6d51cc4c.js" crossorigin="anonymous"></script>
     <style>
         #rugsContainer1{
             display: grid;
+            width: 80%;
             grid-template-columns: repeat(4, 1fr);
             gap: 10px;
-            margin-left:20%;
+            margin-left:18%;
             margin-top:30px;
         }
         #rugsImage{
             height:300px;
-            width: 290px;
+            width: 100%;
         }
+        #categories{
+            display: block;
+        }
+    
+    
 
     </style>
 
@@ -613,7 +619,7 @@ rugs.map((el)=>{
         array.push(el);
         console.log(array);
         localStorage.setItem("purchaseData", JSON.stringify(array));
-        window.location.href="../../Ajit/detail.html"
+        window.location.href="../Ajit/detail.html"
     })
 
     let title = document.createElement("p");
@@ -632,13 +638,13 @@ console.log(Rachandan);
 </script>
 
 <Script type="module">
-    import { navbar, sideOff } from "../../Header/header.js";
+    import { navbar, sideOff } from "../Header/header.js";
     let navHade=document.getElementById("header");
     navHade.innerHTML=navbar();
   
     sideOff();
   
-      import {footer,scrollTop} from "../../Footer/footer.js";
+      import {footer,scrollTop} from "../Footer/footer.js";
           let footER= document.getElementById("footerA");
           footER.innerHTML=footer();
           let scrolToTop=document.getElementById("btnScrollToTop");

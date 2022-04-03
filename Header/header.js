@@ -4,21 +4,18 @@ const navbar = () => {
     <div id="pappu">
   
       <div>
-        <a href="">UP TO 20% 0FF OUTDOOR</a>
+        <a href="../Rajayadav/outdoor.html">UP TO 20% 0FF OUTDOOR</a>
   
         <span style="padding: 0 8px 0 8px;">|</span>
   
-        <a href="">NEW TO SALE: UP TO 60% OFF</a>
+        <a href="../Rajayadav/lighting.html">NEW TO SALE: UP TO 60% OFF</a>
   
         <span style="padding: 0 8px 0 8px;">|</span>
   
-        <a href="">BUY NOW. PAY OVER TIME.</a>
+        <a href="../AdityaArnav/Navrugs.html">UP TO 20% OFF SELECT WALL DECOR & RUGS (ENDS 4/2)</a>
   
         <span style="padding: 0 8px 0 8px;">|</span>
   
-        <a href="">FREE DESIGN SERVICES</a>
-  
-        <span style="padding: 0 8px 0 8px;">|</span>
   
         <span id="keyOffer">SEE ALL OFFERS (6)</span>
       </div>
@@ -61,14 +58,14 @@ const navbar = () => {
         </div>
   
         <div class="dropdown">
-          <button class="dropbtn"><a href="../AdityaArnav/login/login.html">
+          <button class="dropbtn"><a href="../AdityaArnav/login.html">
               <h2><i style="color:black" class="fa-solid fa-user"></i></h2>
             </a></button>
           <div class="dropdown-content">
-            <a href="../AdityaArnav/login/login.html">SIGN IN</a>
-            <a href="#">ORDER TRACK</a>
-            <a href="#">SCHEDULE DELIVERY</a>
-            <a href="../AdityaArnav/credit/credit.html">CB2 CREDIT CARD</a>
+            <a href="../AdityaArnav/login.html">SIGN IN</a>
+            <a href="">ORDER TRACK</a>
+            <a href="">SCHEDULE DELIVERY</a>
+            <a href="../AdityaArnav/credit.html">CB2 CREDIT CARD</a>
           </div>
         </div>
   
@@ -79,7 +76,7 @@ const navbar = () => {
           <div class="dropdown-content">
             <p>SOMETHING CATCH YOUR EYE?</p>
   
-            <a href="../AdityaArnav/login/login.html">Sign In</a>
+            <a href="../AdityaArnav/login.html">Sign In</a>
             <p>" To see items you maty have added using another computer or device."</p>
   
           </div>
@@ -104,23 +101,23 @@ const navbar = () => {
   
     <div id="categories">
       <ul type="none">
-        <li onclick="">SPRING '22 STORIES</li>
-        <li onclick="">NEW</li>
+        <li onclick=""><a href="">SPRING '22 STORIES</a></li>
+        <li onclick=""><a href="../Rajayadav/outdoor.html">OUTDOOR</a></li>
         <li onclick=""><a href="../Rajayadav/furniture.html">FURNITURE</a></li>
-        <li onclick=""> <a href="#">DECOR & MIRRORS</a></li>
+        <li onclick=""> <a href="../AdityaArnav/rugs.html">DECOR & MIRRORS</a></li>
         <li onclick=""> <a href="../Rajayadav/lighting.html">LIGHTING</a></li>
-        <li onclick=""> <a href="#">PILLOWS & THROWS</a></li>
-        <li onclick=""> <a href="../Rajayadav/furniture.html">RUGS</a></li>
+        <li onclick=""> <a href="../AdityaArnav/rugs.html">PILLOWS & THROWS</a></li>
+        <li onclick=""> <a href="../AdityaArnav/rugs.html">RUGS</a></li>
         <li onclick=""> <a href="../Rajayadav/kitchen.html">KITCHEN & DINING</a></li>
         <li onclick=""> <a href="../Rajayadav/bathProduct.html">BEDDING & BATH</a></li>
-        <li onclick=""> <a href="#">GIFTS</a></li>
-        <li onclick="" style="color:red;">SALE & OFFERS</li>
-        <li onclick="">KRAVITZ DESIGN</li>
+        <li onclick=""> <a href="">GIFTS</a></li>
+        <li onclick="" style="color:red;"><a href="">SALE & OFFERS</a></li>
+        <li onclick=""><a href="../Atanu/kristeenGiorgi.html">KRAVITZ DESIGN</a></li>
         <hr style="width :8%; margin: 20px 0;border: 1px solid;">
-        <li onclick="">COLLABORATIONS</li>
-        <li onclick="">IDEAS & INSPIRATIONS</li>
-        <li onclick="">FREE DESIGN SERVICES</li>
-        <li onclick="">TRADE PROGRAM</li>
+        <li onclick=""><a href="">COLLABORATIONS</a></li>
+        <li onclick=""><a href="">IDEAS & INSPIRATIONS</a></li>
+        <li onclick=""><a href="">FREE DESIGN SERVICES</a></li>
+        <li onclick=""><a href="">TRADE PROGRAM</a></li>
       </ul>
     </div>
 
@@ -129,26 +126,26 @@ const navbar = () => {
     <div id="offerA">
      <div id="offR-X" style="margin-left: 95%;margin-top: 5px; width: 30px; height: 30px;"><img src="./remove.png" alt="" style="right:10px; width: 100%; height:100%;"></div>
      <h5 style="padding-left: 45px; margin-top: 0px;">SALE & OFFERS</h5>
-     <a href="">
+     <a href="../AdityaArnav/Navrugs.html">
       <div style="cursor: pointer; color: rgb(243, 75, 75);padding-left: 45px;">
         <h4 style="margin-bottom: 5px;">UP TO 20% OFF WALL ART & RUGS</h4>
         <span style="font-size:14px; text-decoration:underline">SHOP NOW</span><span> | </span><span style="font-size:14px;">ENDS 4/2</span>
        </div>
      </a>
-     <a href="">
+     <a href="../Rajayadav/outdoor.html">
       <div style="cursor: pointer; color: rgb(243, 75, 75);padding-left: 45px;padding-top: 5px;">
         <h4 style="margin-bottom: 5px;">UP TO 20% OFF OUTDOOR</h4>
         <span style="font-size:14px; text-decoration:underline">SHOP NOW</span><span> | </span><span style="font-size:14px;">ENDS 4/11</span>
        </div>
      </a>
-     <a href="">
+     <a href="../Rajayadav/furniture.html">
       <div style="cursor: pointer; color: rgb(243, 75, 75);padding-left: 45px;padding-top: 5px;">
         <h4 style="margin-bottom: 5px;">NEW TO SALE: UP TO 60% OFF</h4>
         <span style="font-size:14px; text-decoration:underline">SHOP NOW</span>
        </div>
      </a>
      <hr style="margin: 30px 45px 30px 45px;">
-     <a href="">
+     <a href="https://www.cb2.com/invite">
       <div style="cursor: pointer;padding-left: 45px;padding-top: 0px;">
         <h4 style="margin-bottom: 5px;">GIVE 15% OFF. GET $20.</h4>
         <span style="font-size:14px; text-decoration:underline">LEARN MORE</span>
@@ -167,7 +164,7 @@ const navbar = () => {
         <span style="font-size:14px; text-decoration:underline">SHOP NOW</span>
        </div>
      </a>
-     <a href="">
+     <a href="../Rajayadav/furniture.html">
       <div style="cursor: pointer;padding-left: 45px;padding-top: 5px;">
         <h4 style="margin-bottom: 5px;">UNLIMITED FURNITURE DELIVERY FOR ONE FLAT FEE</h4>
         <span style="font-size:14px; text-decoration:underline">SHOP FURNITURE</span>

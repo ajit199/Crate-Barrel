@@ -17,7 +17,7 @@ let array = JSON.parse(localStorage.getItem("signin_detail")) || [];
                 this.password = password;
                     // console.log("aditya arnav")
                     alert("Account Created: You can Login now")
-                    window.location.href = "../login/login.html"
+                    window.location.href = "./login.html"
 
                 // window.location.href = "/signIn.html"
             }
