@@ -26,7 +26,7 @@ document.getElementById("form").addEventListener("submit",(e)=>{
     }
     if(flag===1){
         alert("login success")
-            window.location.href="/index.html"
+            window.location.href="../../index.html"
     }
     else{
             alert("wrong password")
