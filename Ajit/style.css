@@ -177,7 +177,7 @@ span {
 }
 
 #cart_total > div >p:last-child::before, #total>p:last-child::before{
-    content: "$";
+    content:  ";
 }
 
 #cart_total > div >p, #total>p{
@@ -249,7 +249,7 @@ span {
 }
 
 #product-total::before {
-    content: "$";
+    content:  ";
     font-size: 20px;
 }
 

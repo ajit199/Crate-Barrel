@@ -1,7 +1,7 @@
 function cartItem({ title, image, price }, index) {
   return `
     <div id="items">
-    <input type="hidden" id="index" value="${index}" />
+    <input type="hidden" id="index" value= {index}" />
     <hr style = "border:1px solid black;margin-top:25px" />
       <div id="product-details">
         <div>
