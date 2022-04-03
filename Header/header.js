@@ -62,7 +62,7 @@ const navbar = () => {
               <h2><i style="color:black" class="fa-solid fa-user"></i></h2>
             </a></button>
           <div class="dropdown-content">
-            <a href="../AdityaArnav/login.html">SIGN IN</a>
+            <a href="../AdityaArnav/login.html" id="usrN" style="text-transform:uppercase; color:red">SIGN IN</a>
             <a href="">ORDER TRACK</a>
             <a href="">SCHEDULE DELIVERY</a>
             <a href="../AdityaArnav/credit.html">CB2 CREDIT CARD</a>

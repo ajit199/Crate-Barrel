@@ -15,17 +15,19 @@ document.getElementById("form").addEventListener("submit",(e)=>{
     // let x = false;
     //     }
     let flag=0;
-
+    let name="";
     for(let i = 0; i<array.length; i++){
         if(array[i].email===emaill && array[i].password===passwordd){
             // console.log("Adityaboss")
            flag=1;
+           name=array[i].Fname;
         }
         
        
     }
     if(flag===1){
         alert("login success")
+        localStorage.setItem("userName",name);
             window.location.href="../index.html"
     }
     else{

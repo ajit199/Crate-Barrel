@@ -72,6 +72,12 @@
         let scrolToTop=document.getElementById("btnScrollToTop");
         scrollTop(scrolToTop);
 
+        var username=localStorage.getItem("userName");
+        var nam=document.getElementById("usrN");
+       if(username!==null){
+         nam.innerText=`Hi, ${username}`;
+         nam.href="";
+       }
 
 
 </Script>
