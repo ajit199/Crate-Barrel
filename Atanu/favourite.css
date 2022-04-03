@@ -50,10 +50,11 @@
     cursor: pointer;
 }
 #cartA{
-    height: 25px;
+    height: 40px;
+    width: 150px;
     color: white;
     background-color: black;
-    font-size: 12px;
+    font-size: 16px;
     cursor: pointer;
     text-align: center;
     border: 1px solid;

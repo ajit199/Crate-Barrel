@@ -40,7 +40,7 @@ const append=(data,parent)=>{
 
       image.src=el.image;
       image.style.width="100%"
-      image.style.height="380px"
+      image.style.height="300px"
 
       image.addEventListener("click",(index)=>{
 

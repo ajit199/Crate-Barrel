@@ -56,7 +56,7 @@ const favAppend= (data)=>{
         leftAdi.innerText="ADD TO ADDITINAL LIST";
 
         let rightAdi=document.createElement("a");
-        rightAdi.href="../AdityaArnav/signUp/signUp.html";
+        rightAdi.href="../AdityaArnav/signUp.html";
         rightAdi.innerText="ADD TO REGISTER";
     btmBox.append(leftAdi,rightAdi);
 

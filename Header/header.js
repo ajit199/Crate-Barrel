@@ -111,7 +111,7 @@ const navbar = () => {
         <li onclick=""> <a href="../Rajayadav/kitchen.html">KITCHEN & DINING</a></li>
         <li onclick=""> <a href="../Rajayadav/bathProduct.html">BEDDING & BATH</a></li>
         <li onclick=""> <a href="">GIFTS</a></li>
-        <li onclick="" style="color:red;"><a href="">SALE & OFFERS</a></li>
+        <li onclick="" style="color:red;">SALE & OFFERS</li>
         <li onclick=""><a href="../Atanu/kristeenGiorgi.html">KRAVITZ DESIGN</a></li>
         <hr style="width :8%; margin: 20px 0;border: 1px solid;">
         <li onclick=""><a href="">COLLABORATIONS</a></li>
