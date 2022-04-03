@@ -39,13 +39,15 @@ const append=(data,parent)=>{
     let image=document.createElement("img")
 
       image.src=el.image;
-      // image.style.width="350px"
-      // image.style.height="380px"
+      image.style.width="100%"
+      image.style.height="380px"
 
       image.addEventListener("click",(index)=>{
 
-                //   console.log(el)
-                localStorage.setItem("purchaseData",JSON.stringify(el))
+              let arr=[];
+              arr.push(el)
+                localStorage.setItem("purchaseData",JSON.stringify(arr))
+                location.href="../Ajit/detail.html"
 
          })
 

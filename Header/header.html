@@ -22,50 +22,81 @@
     import navbar from "./header.js";
     var header = document.getElementById("header");
     header.innerHTML = navbar();
-    let tag = document.getElementById("bar");
-    let icon = document.querySelector("#sidebar>span>i");
-    let categories = document.getElementById("categories");
-    tag.addEventListener("click", (event) => {
-        let value = tag.getAttribute("aria-hidden");
-        if (value == "false") {
-            icon.style.border = "1px dotted black";
-            tag.setAttribute("class", "fa-solid fa-xmark fa-2x fa-fw");
-            tag.setAttribute("aria-hidden", "true");
-            categories.style.animation = "showCategory 0.8s";
-            setTimeout(() => {
-                categories.style.display = "block";
-            }, 400)
-        } else if (value == "true") {
-            icon.style.border = "1px dotted black";
-            tag.setAttribute("class", "fa-solid fa-bars fa-2x fa-fw");
-            tag.setAttribute("aria-hidden", "false");
-            categories.style.animation = "hideCategory 0.8s";
-            setTimeout(() => {
-                categories.style.display = "none";
-            }, 800)
-        }
-    })
 
-    document.addEventListener("click", (event) => {
-        if (event.target.nodeName != "I") {
-            icon.style.border = "none";
-        }
-    });
+    //sidebar Function:-->
+//     let tag = document.getElementById("bar");
+//     let icon = document.querySelector("#sidebar>span>i");
+//     let categories = document.getElementById("categories");
+//     tag.addEventListener("click", (event) => {
+//         let value = tag.getAttribute("aria-hidden");
+//         if (value == "false") {
+//             icon.style.border = "1px dotted black";
+//             tag.setAttribute("class", "fa-solid fa-xmark fa-2x fa-fw");
+//             tag.setAttribute("aria-hidden", "true");
+//             categories.style.animation = "showCategory 0.8s";
+//             setTimeout(() => {
+//                 categories.style.display = "block";
+//             }, 400)
+//         } else if (value == "true") {
+//             icon.style.border = "1px dotted black";
+//             tag.setAttribute("class", "fa-solid fa-bars fa-2x fa-fw");
+//             tag.setAttribute("aria-hidden", "false");
+//             categories.style.animation = "hideCategory 0.8s";
+//             setTimeout(() => {
+//                 categories.style.display = "none";
+//             }, 800)
+//         }
+//     })
 
-    let box = document.getElementById("input-box");
-    let btn = document.getElementById("btn");
-    let line = document.getElementById("line");
-    box.addEventListener("focus", () => {
-        btn.style.animation = "searchBtn 0.5s forwards";
-        box.placeholder = "Search";
-        line.style.width = "350px";
-        line.style.borderTop = "0.18em solid";
-    })
+//     document.addEventListener("click", (event) => {
+//         if (event.target.nodeName != "I") {
+//             icon.style.border = "none";
+//         }
+//     });
 
-    box.addEventListener("focusout", () => {
-        btn.style.animation = "search 0.5s forwards";
-        box.placeholder = "";
-        line.style.width = "200px";
-        line.style.borderTop = "1px solid";
-    })
+//     let box = document.getElementById("input-box");
+//     let btn = document.getElementById("btn");
+//     let line = document.getElementById("line");
+//     box.addEventListener("focus", () => {
+//         btn.style.animation = "searchBtn 0.5s forwards";
+//         box.placeholder = "Search";
+//         line.style.width = "350px";
+//         line.style.borderTop = "0.18em solid";
+//     })
+
+//     box.addEventListener("focusout", () => {
+//         btn.style.animation = "search 0.5s forwards";
+//         box.placeholder = "";
+//         line.style.width = "200px";
+//         line.style.borderTop = "1px solid";
+//     })
+
+
+
+    
+// let offer=document.getElementById("offerA");
+
+// document.querySelector("body").append(offer);
+
+// document.getElementById("keyOffer").addEventListener("click",()=>{
+
+// if(offer.style.display=="none"){
+//   offer.style.display="block";
+//   document.querySelector("#footerA").style.opacity="0.3";
+//   document.querySelector("#middleA").style.opacity="0.3";
+// }
+// else{
+//   offer.style.display="none";
+//   document.querySelector("#footerA").style.opacity="1";
+//   document.querySelector("#middleA").style.opacity="1";
+// }
+// })
+// document.getElementById("offR-X").addEventListener("click",()=>{
+
+// if(offer.style.display=="block"){
+//  offer.style.display="none";
+//  document.querySelector("#footerA").style.opacity="1";
+//  document.querySelector("#middleA").style.opacity="1";
+// }
+// })
 </script>

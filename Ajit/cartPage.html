@@ -9,10 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/0a6d51cc4c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Header/header.css">
+    <link rel="stylesheet" href="../Footer/footer.css">
 </head>
 
 <body>
+    <div id="header">
+
+    </div>
     <div id="cart-container">
         <div id="cart-products">
             <h2 id="cartCount">CART:(<span style="color: black;">2</span> items)</h2>
@@ -46,58 +52,6 @@
             <div id="items">
 
             </div>
-            <!-- <hr style="border: 1px solid black;" /> -->
-            <!-- <div id="items">
-            <div id="product-details">
-                <div>
-                    <h3 id="product_name">CAMEO BLACK CURVED NIGHTSTAND</h3>
-                    <p>SKU 418734</p>
-                </div>
-                <div id="quantity">
-                    <button id="minus">-</button>
-                    <input type="text" id="cart_quantity" />
-                    <button id="plus">+</button>
-                    <span id="product-price">$499</span>
-                </div>
-                <div>
-                    <h3 id="product-total">$998</h3>
-                </div>
-            </div>
-            <hr />
-            <div id="product-image-div">
-                <div>
-                    <img src="https://cb2.scene7.com/is/image/CB2/CameoBlkCrvdNightstandSHS22/$web_cart_lg$/211028102020/cameo-black-curved-nightstand.jpg"
-                        alt="product-image" width="215" height="215" />
-                </div>
-                <div id="ship_methods">
-                    <input type="radio" name="method" id="" />
-                    <label for="">SHIP<br /><span style="margin-left: 40px; font-size: 12px">In stock and ready for
-                            delivery to zip code 60540 <br>
-                            <span style="margin-left: 40px; font-size: 12px">Shipping:<span
-                                    style="text-decoration: underline;">Standard</span></span>
-                            .</span></label><br />
-                    <input type="radio" name="method" id="" />
-                    <label for="">
-                        FREE PICKUP<br /><span style="
-                  margin-left: 40px;
-                  font-size: 12px;
-                  text-decoration: underline;
-                  cursor: pointer;
-                ">SELECT LOCATION</span></label>
-                </div>
-                <div id="remove-product">
-                    <div>
-                        <span><i class="fa-solid fa-xmark fa-2x"></i></span>
-                        <p>Remove</p>
-                    </div>
-                    <hr>
-                    <div>
-                        <span><i class="fa-solid fa-arrow-down fa-2x"></i></span>
-                        <p>Save for Later</p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         </div>
         <!-- cart summary starts here -->
         <div id="cart-summary">
@@ -110,11 +64,11 @@
                     </div>
                     <div>
                         <p>Est. Shipping & Handling:</p>
-                        <p id="shipping">0</p>
+                        <p id="shipping">50</p>
                     </div>
                     <div>
                         <p>Est. Tax:</p>
-                        <p id="tax">0</p>
+                        <p id="tax">30</p>
                     </div>
                 </div>
                 <hr />
@@ -153,7 +107,24 @@
         </div>
         <!-- cart summary ends here -->
     </div>
+    <div id="footerA"></div>
 </body>
 
 </html>
+<Script type="module">
+    import { navbar } from "../Header/header.js";
+    let navHade = document.getElementById("header");
+    navHade.innerHTML = navbar();
+
+    // sideOff();
+
+    import { footer, scrollTop } from "../Footer/footer.js";
+    let footER = document.getElementById("footerA");
+    footER.innerHTML = footer();
+    let scrolToTop = document.getElementById("btnScrollToTop");
+    scrollTop(scrolToTop);
+
+
+
+</Script>
 <script type="module" src="./scripts/cartPage.js"></script>

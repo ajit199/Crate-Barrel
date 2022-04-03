@@ -36,14 +36,16 @@ const favAppend= (data)=>{
         let cpBox=document.createElement("div");
             let p=document.createElement("p");
             p.setAttribute("id","pri")
-            p.innerText= "$"+" "+el.price;
+            p.innerText="$"+" "+el.price;
+
                 let cart=document.createElement("button");
                 cart.innerText="ADD TO CART";
                 cart.setAttribute("id","cartA");
                 cart.addEventListener("click",()=>{
+                    el.quantity=1;
                     cartData.push(el);
                     localStorage.setItem("cartItems",JSON.stringify(cartData));
-                    window.location.href="#";
+                    window.location.href="../Ajit/cartPage.html";
                     });
 
         let btmBox=document.createElement("div");
@@ -54,7 +56,7 @@ const favAppend= (data)=>{
         leftAdi.innerText="ADD TO ADDITINAL LIST";
 
         let rightAdi=document.createElement("a");
-        rightAdi.href="";
+        rightAdi.href="../AdityaArnav/signUp/signUp.html";
         rightAdi.innerText="ADD TO REGISTER";
     btmBox.append(leftAdi,rightAdi);
 

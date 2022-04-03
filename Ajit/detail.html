@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+  <script src="https://kit.fontawesome.com/0a6d51cc4c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../Header/header.css">
+  <link rel="stylesheet" href="../Footer/footer.css">
   <style>
     * {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -21,6 +24,7 @@
       display: flex;
       width: 85%;
       margin: auto;
+      margin-top: 50px;
     }
 
     #main_img {
@@ -149,6 +153,7 @@
 </head>
 
 <body>
+  <div id="header"></div>
   <div id="main_container">
     <div id="main_img">
       <img id="product_image"
@@ -217,9 +222,26 @@
       </div>
     </div>
   </div>
+  <div id="footerA"></div>
 </body>
 
 </html>
+<Script type="module">
+  import { navbar } from "../Header/header.js";
+  let navHade = document.getElementById("header");
+  navHade.innerHTML = navbar();
+
+  // sideOff();
+
+  import { footer, scrollTop } from "../Footer/footer.js";
+  let footER = document.getElementById("footerA");
+  footER.innerHTML = footer();
+  let scrolToTop = document.getElementById("btnScrollToTop");
+  scrollTop(scrolToTop);
+
+
+
+</Script>
 <script>
   let cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
   let product = JSON.parse(localStorage.getItem("purchaseData"));
@@ -256,5 +278,6 @@
     }
     cartArr.push(product);
     localStorage.setItem("cartItems", JSON.stringify(cartArr));
+    window.location.href = "cartPage.html";
   })
 </script>

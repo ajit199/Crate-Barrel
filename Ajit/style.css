@@ -13,6 +13,7 @@ span {
     width: 98%;
     margin: auto;
     justify-content: space-between;
+    margin-top: 50px;
 }
 
 #cart-products {
@@ -157,9 +158,9 @@ span {
     border: 2px solid rgb(180, 180, 180);
     padding: 0 30px;
     height: 600px;
-    /* position: fixed;
-    top: 0;
-    right: 0; */
+    position: sticky;
+    top: 10px;
+    right: 0;
 }
 
 #cart-summary p {
