@@ -47,31 +47,28 @@ const navbar = () => {
   
       </div>
       <div>
-        <a href=""><img
+        <a href="../index.html"><img
             src="https://images.squarespace-cdn.com/content/v1/6059ecd2c49f5d3d9ef9a9ed/1617306626011-1C6XZRUS8I3N1HXILPWI/CB2+LOGO.png"
             alt="Encrypted" id="ac"></a>
       </div>
       <div id="bicchu">
   
         <div class="dropdown">
-          <button class="dropbtn"><a href="">
+          <button class="dropbtn"><a href="../Rahul Gupta/store/stores.html">
               <h2><i style="color:black" class="fa-solid fa-location-dot"></i></h2>
             </a></button>
-          <div class="dropdown-content">
-            <a href="#"></a>
-  
-          </div>
+         
         </div>
   
         <div class="dropdown">
-          <button class="dropbtn"><a href="">
+          <button class="dropbtn"><a href="../AdityaArnav/login/login.html">
               <h2><i style="color:black" class="fa-solid fa-user"></i></h2>
             </a></button>
           <div class="dropdown-content">
-            <a href="#">SIGN IN</a>
+            <a href="../AdityaArnav/login/login.html">SIGN IN</a>
             <a href="#">ORDER TRACK</a>
             <a href="#">SCHEDULE DELIVERY</a>
-            <a href="#">CB2 CREDIT CARD</a>
+            <a href="../AdityaArnav/credit/credit.html">CB2 CREDIT CARD</a>
           </div>
         </div>
   
@@ -82,7 +79,7 @@ const navbar = () => {
           <div class="dropdown-content">
             <p>SOMETHING CATCH YOUR EYE?</p>
   
-            <a href="#">Sign In</a>
+            <a href="../AdityaArnav/login/login.html">Sign In</a>
             <p>" To see items you maty have added using another computer or device."</p>
   
           </div>

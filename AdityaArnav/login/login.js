@@ -46,7 +46,7 @@ document.getElementById("form").addEventListener("submit",(e)=>{
 
 document.getElementById("cabtn").addEventListener("click",(elem)=>{
     elem.preventDefault()
-    window.location.href="/signUp/signUp.html"
+    window.location.href="../signUp/signUp.html"
 
 });
 
