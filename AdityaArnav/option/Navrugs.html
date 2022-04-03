@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UP TO 20% OFF</title>
+    <link rel="stylesheet" href="../../Footer/footer.css">
+    <link rel="stylesheet" href="../../Header/header.css">
+    <script src="https://kit.fontawesome.com/0a6d51cc4c.js" crossorigin="anonymous"></script>
     <style>
         #rugs_container{
             display: grid;
             grid-template-columns : repeat(4,1fr);
             gap: 10px;
             margin-left: 20%;
+            /* margin-top:10px; */
         }
         #rugImg{
             height:300px;
@@ -21,7 +25,7 @@
 </head>
 <body>
     <div id ="header"></div>
-    <h1 style="margin-left:20%">UP TO 20% OFF SELECT WALL DECOR & RUGS (ENDS 4/2)</h1>
+    <h1 style="margin-left:20%; margin-top: 50px;">UP TO 20% OFF SELECT WALL DECOR & RUGS (ENDS 4/2)</h1>
     <div id="rugs_container"></div>
     <div id="footerA"></div>
 </body>
@@ -669,3 +673,19 @@
 
 
 </script>
+<Script type="module">
+    import { navbar, sideOff } from "../../Header/header.js";
+    let navHade=document.getElementById("header");
+    navHade.innerHTML=navbar();
+  
+    sideOff();
+  
+      import {footer,scrollTop} from "../../Footer/footer.js";
+          let footER= document.getElementById("footerA");
+          footER.innerHTML=footer();
+          let scrolToTop=document.getElementById("btnScrollToTop");
+          scrollTop(scrolToTop);
+  
+  
+  
+  </Script>

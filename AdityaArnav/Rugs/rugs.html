@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../../Footer/footer.css">
+    <link rel="stylesheet" href="../../Header/header.css">
+    <script src="https://kit.fontawesome.com/0a6d51cc4c.js" crossorigin="anonymous"></script>
     <style>
         #rugsContainer1{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 10px;
             margin-left:20%;
+            margin-top:30px;
         }
         #rugsImage{
             height:300px;
@@ -21,7 +25,15 @@
 
 </head>
 <body>
+    <div id="header"></div>
+
+    <h1 style="margin-left:20%; margin-top:50px;">Rugs</h1>
+
+
     <div id="rugsContainer1"></div>
+
+
+    <div id="footerA"></div>
 </body>
 </html>
 <script>
@@ -607,8 +619,8 @@ rugs.map((el)=>{
     let title = document.createElement("p");
     title.innerText = el.title;
 
-    let price = document.createElement("p");
-    price.innerText = el.Price;
+    let price = document.createElement("h3");
+    price.innerText = "$"+" " +el.Price;
 
     box.append(img, title, price);
     document.querySelector("#rugsContainer1").append(box);
@@ -618,3 +630,20 @@ localStorage.setItem("pugs",JSON.stringify(rugs));
 let Rachandan =JSON.parse(localStorage.getItem("rugs"))
 console.log(Rachandan);
 </script>
+
+<Script type="module">
+    import { navbar, sideOff } from "../../Header/header.js";
+    let navHade=document.getElementById("header");
+    navHade.innerHTML=navbar();
+  
+    sideOff();
+  
+      import {footer,scrollTop} from "../../Footer/footer.js";
+          let footER= document.getElementById("footerA");
+          footER.innerHTML=footer();
+          let scrolToTop=document.getElementById("btnScrollToTop");
+          scrollTop(scrolToTop);
+  
+  
+  
+  </Script>
