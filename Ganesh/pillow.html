@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PILLOW & THROWS</title>
+    <script src="https://kit.fontawesome.com/0a6d51cc4c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Footer/footer.css">
+    <link rel="stylesheet" href="../Header/header.css">
+    <style>
+        #conCrisA{
+            display: grid;
+            grid-template-columns: 20% 78%;
+            gap: 2%;
+        }
+        #cristeenA{
+            display: grid;
+            grid-template-columns: 50% 48%;
+            grid-template-rows: 600px;
+            gap: 1%;
+        }
+        #productA{
+            display: grid;;
+            grid-template-columns: repeat(4,25%);
+            grid-auto-rows: 320px;
+            gap: 1%;
+            justify-content: center;
+            margin: 20px;
+        }
+        #productA>div:hover{
+         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+         margin-bottom: 15px;
+        }
+        #tp{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #categories{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="conCrisA">
+        <div id="leftA"></div>
+        <div id="rightA">
+            <div>
+                <a href="../index.html" class="underline_hover" style="margin-top: 40px;">SPECIAL FEATURES</a>
+                <h1 style="font-size: 30px; font-family:'Courier New',">PILLOW & THROWS</h1>
+            </div>
+      
+           <div id="productA">
+
+           </div>
+        </div>
+    </div>
+    <div id="footerA">
+        <!-- footer upper section -->
+     
+    </div>
+</body>
+</html>
+
+<Script type="module">
+
+import { navbar, sideOff } from "../Header/header.js";
+  let navHade=document.getElementById("header");
+  navHade.innerHTML=navbar();
+  sideOff();
+
+    import {footer,scrollTop} from "../Footer/footer.js";
+        let footER= document.getElementById("footerA");
+        footER.innerHTML=footer();
+        let scrolToTop=document.getElementById("btnScrollToTop");
+        scrollTop(scrolToTop);
+</Script>
+<script>
+    let pillow=[
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/BoucleBlack36x16inPllwSHS22/$web_pdp_main_carousel_md$/220311102829/36x16-black-boucle-pillow.jpg",
+            title:'36"X16" BLACK BOUCLE PILLOW',
+            price:70,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/BoucleIvory36x16inPllwSHS22/$web_pdp_main_carousel_md$/220225144845/36x16-ivory-boucle-pillow.jpg",
+            title:'36"X16" IVORY BOUCLE PILLOW',
+            price:69,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/TygraPillow23x23SHS22/$web_pdp_main_carousel_md$/220221113854/20-tygra-brown-pillow.jpg",
+            title:'20" TYGRA BROWN PILLOW',
+            price:79,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/FauxFurSnowLeopardThrowSHF19/$web_pdp_main_carousel_md$/190508125822/faux-fur-snow-leopard-throw.jpg",
+            title:'FAUX FUR SNOW LEOPARD THROW',
+            price:79,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/IcelandicSheepskinWhiteSHF16/$web_pdp_main_carousel_md$/190905021708/icelandic-sheepskin-throw.jpg",
+            title:'ICELANDIC SHEEPSKIN THROW',
+            price:269,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/CatalinaLinenPillow26x26SHS22/$web_pdp_main_carousel_md$/211020112022/26-catalina-floral-pillow.jpg",
+            title:'26" CATALINA FLORAL PILLOW',
+            price:71,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/RenColorblockPillow26x26SHS22/$web_pdp_main_carousel_md$/211020112759/26-ren-colorblock-pillow.jpg",
+            title:'26" REN COLORBLOCK PILLOW',
+            price:69,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/EmberPillow23x23SHS22/$web_pdp_main_carousel_md$/211020112807/23-ember-pillow.jpg",
+            title:'23" EMBER PILLOW',
+            price:89,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/AikoAlpacaThrowSHS22/$web_pdp_main_carousel_md$/211117173028/aiko-alpaca-blanket-with-fringe.jpg",
+            title:'AIKO ALPACA BLANKET WITH FRINGE',
+            price:279,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/DreamscapePillow18x18inSHS22/$web_pdp_main_carousel_md$/220114142951/18-dreamscape-watercolor-pillow.jpg",
+            title:'18" DREAMSCAPE WATERCOLOR PILLOW',
+            price:59,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/FloraPillow23x23SHS22/$web_pdp_main_carousel_md$/220105161810/23-flora-linen-pillow.jpg",
+            title:'23" FLORA LINEN PILLOW',
+            price:59,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/HarleeRoundBlackPillowSHS22/$web_pdp_main_carousel_md$/211020112755/harlee-round-black-pillow.jpg",
+            title:'HARLEE ROUND BLACK PILLOW',
+            price:59,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/CatalinaLinenPillow26x26SHS22/$web_pdp_main_carousel_md$/211020112022/26-catalina-floral-pillow.jpg",
+            title:'26" CATALINA FLORAL PILLOW',
+            price:71,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/RenColorblockPillow26x26SHS22/$web_pdp_main_carousel_md$/211020112759/26-ren-colorblock-pillow.jpg",
+            title:'26" REN COLORBLOCK PILLOW',
+            price:69,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/EmberPillow23x23SHS22/$web_pdp_main_carousel_md$/211020112807/23-ember-pillow.jpg",
+            title:'23" EMBER PILLOW',
+            price:89,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/FauxShpsknBrnPillow20x20SHS22/$web_pdp_main_carousel_md$/211020112728/20-faux-sheepskin-brown-pillow.jpg",
+            title:'20" FAUX SHEEPSKIN BROWN PILLOW',
+            price:89,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/CloudLtEggplntPllw20x20SHS22/$web_pdp_main_carousel_md$/211020112022/20-cloud-light-eggplant-satin-pillow.jpg",
+            title:'20" CLOUD LIGHT EGGPLANT SATIN PILLOW',
+            price:59,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/ConnectShpsknPllw20x20SHS22/$web_pdp_main_carousel_md$/211020112032/20-connect-sheepskin-pillow.jpg",
+            title:'20" CONNECT SHEEPSKIN PILLOW',
+            price:84,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/KDLineageThrowAVSHF21/$web_pdp_main_carousel_md$/210810141033/lineage-woven-throw.jpg",
+            title:'LINEAGE WOVEN THROW',
+            price:79,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/MnglnShpsknThrwBn35X70inSHF21/$web_pdp_main_carousel_md$/210624130605/mongolian-sheepskin-throw-brown.jpg",
+            title:'MONGOLIAN SHEEPSKIN THROW BROWN',
+            price:89,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/CueAlpacaGreyThrowSHS21/$web_pdp_main_carousel_md$/201104171624/cue-alpaca-grey-throw.jpg",
+            title:'CUE GREY ALPACA THROW',
+            price:239,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/FauxFurSnowLeopardThrowSHF19/$web_pdp_main_carousel_md$/190508125822/faux-fur-snow-leopard-throw.jpg",
+            title:'FAUX FUR SNOW LEOPARD THROW',
+            price:79,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/IcelandicSheepskinWhiteSHF16/$web_pdp_main_carousel_md$/190905021708/icelandic-sheepskin-throw.jpg",
+            title:'ICELANDIC SHEEPSKIN THROW',
+            price:269,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/AikoAlpacaThrowSHS22/$web_pdp_main_carousel_md$/211117173028/aiko-alpaca-blanket-with-fringe.jpg",
+            title:'AIKO ALPACA BLANKET WITH FRINGE',
+            price:279,
+        },
+        {
+            image:"https://cb2.scene7.com/is/image/CB2/AltoGauzeGldOgCtnFQBlnktSHF21/$web_pdp_main_carousel_md$/210406173058/alto-gold-organic-cotton.jpg",
+            title:'ALTO GAUZE GOLD ORGANIC COTTON BLANKET AND SHAMS',
+            price:49,
+        },
+    ]
+
+    let purchesdata=JSON.parse(localStorage.getItem("purchaseData"));
+
+    let favProduct=JSON.parse(localStorage.getItem("favourite")) || [];
+
+    pillow.map((el)=>{
+       let box=document.createElement("div");
+
+       let img=document.createElement("img");
+       img.style.width="100%";
+       img.style.height="75%";
+       img.style.cursor="pointer";
+       img.src=el.image;
+       img.addEventListener("click",()=>{
+           let xyz=[];
+           xyz.push(el);
+        localStorage.setItem("purchaseData",JSON.stringify(xyz));
+        window.location.href="../Ajit/detail.html";
+       })
+
+       let tp=document.createElement("div");
+       tp.setAttribute("id","tp");
+       
+        let t= document.createElement("span");
+        t.style.fontSize="14px";
+        t.innerText=el.title;
+
+        let icon=document.createElement("i");
+        icon.setAttribute("class","fa fa-heart-o");
+        icon.style.cursor="pointer";
+        icon.addEventListener("click",()=>{
+            favProduct.push(el);
+            icon.setAttribute("class","fa fa-heart");
+            icon.style.color="red";
+            localStorage.setItem("favourite",JSON.stringify(favProduct))
+        })
+
+
+        tp.append(t,icon)
+
+       let p=document.createElement("h4");
+       p.style.marginTop="0px"
+       p.innerText=`$${el.price}`;
+
+       box.append(img,tp,p);
+       document.getElementById("productA").append(box);
+   })
+</script>
