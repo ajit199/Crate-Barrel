@@ -36,7 +36,7 @@ const favAppend= (data)=>{
         let cpBox=document.createElement("div");
             let p=document.createElement("p");
             p.setAttribute("id","pri")
-            p.innerText= "+" "+el.price;
+            p.innerText= "$"+" "+el.price;
                 let cart=document.createElement("button");
                 cart.innerText="ADD TO CART";
                 cart.setAttribute("id","cartA");
