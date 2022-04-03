@@ -106,7 +106,7 @@ const navbar = () => {
         <li onclick=""><a href="../Rajayadav/furniture.html">FURNITURE</a></li>
         <li onclick=""> <a href="../AdityaArnav/rugs.html">DECOR & MIRRORS</a></li>
         <li onclick=""> <a href="../Rajayadav/lighting.html">LIGHTING</a></li>
-        <li onclick=""> <a href="../AdityaArnav/rugs.html">PILLOWS & THROWS</a></li>
+        <li onclick=""> <a href="../Ganesh/pillow.html">PILLOWS & THROWS</a></li>
         <li onclick=""> <a href="../AdityaArnav/rugs.html">RUGS</a></li>
         <li onclick=""> <a href="../Rajayadav/kitchen.html">KITCHEN & DINING</a></li>
         <li onclick=""> <a href="../Rajayadav/bathProduct.html">BEDDING & BATH</a></li>
