@@ -589,13 +589,20 @@
 
 ]
 
-rugs.map((el)=>{
+rugs.map((el,index)=>{
     
     let box = document.createElement("div");
 
     let img = document.createElement("img");
     img.setAttribute("id", "rugsImage");
     img.src = el.image;
+    img.addEventListener("click",(index)=>{
+        let array = [];
+        array.push(el);
+        console.log(array);
+        localStorage.setItem("purchaseData", JSON.stringify(array));
+        window.location.href="../../Ajit/detail.html"
+    })
 
     let title = document.createElement("p");
     title.innerText = el.title;
